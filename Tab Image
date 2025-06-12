@@ -1,0 +1,10 @@
+if let tabBar = tabBarController?.tabBar {
+            let itemWidth = tabBar.frame.width / CGFloat(tabBar.items!.count)
+            let size : CGFloat = CGFloat(itemWidth) * CGFloat(2)
+            let imageView = UIImageView(frame: CGRectMake(size, 0, itemWidth-10, tabBar.frame.height))
+            let image = UIImage(named: "Compact Camera Filled-100")
+            imageView.image = image
+            imageView.contentMode = .ScaleAspectFit
+            imageView.backgroundColor = UIColor.purpleColor()
+            tabBar.insertSubview(imageView, atIndex: 2)
+        }
